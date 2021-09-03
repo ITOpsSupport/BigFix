@@ -1,8 +1,8 @@
 #!/bin/bash
 mkdir BESClient
 cd BESClient
-wget https://raw.githubusercontent.com/BigFixadmin/BigFixAgent/main/BESAgent-10.0.1.41-ubuntu10.amd64.deb
-wget https://raw.githubusercontent.com/BigFixadmin/BigFixAgent/main/actionsite.afxm
+wget https://github.com/ITOpsSupport/BigFix/blob/fde593a1da4a3988a13a346cdfa60d8323d57910/BESAgent-10.0.1.41-ubuntu10.amd64.deb
+wget https://github.com/ITOpsSupport/BigFix/blob/fde593a1da4a3988a13a346cdfa60d8323d57910/actionsite.afxm
   dpkg -i BESAgent-10.0.1.41-ubuntu10.amd64.deb
 
 /etc/init.d/besclient start
