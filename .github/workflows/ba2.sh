@@ -15,7 +15,6 @@ echo "Making these changes effective to kernel"
 sysctl -p
 echo "creating rc.local with right command set"
 cat > /etc/rc.local <<EOF
-#!/bin/bash
 # /etc/rc.local
 
 /etc/sysctl.d
@@ -27,5 +26,4 @@ echo "Changing permission of the file to 755"
 chmod 755 /etc/rc.local     
 
 
-#sh -x ba2.sh   
 #end
