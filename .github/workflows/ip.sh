@@ -8,6 +8,5 @@ echo "Making these changes effective to kernel"
 sysctl -p
 echo "AddressFamily inet" >>  /etc/ssh/ssh_config
 /etc/init.d/besclient restart
-sysctl status besclient
 exit 0
 EOF
