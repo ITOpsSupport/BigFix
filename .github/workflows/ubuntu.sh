@@ -29,9 +29,7 @@ if dpkg -s $PACKAGE_NAME >/dev/null 2>&1; then
 else
     # Make directory
     mkdir -p /etc/opt/BESClient
-    cd /etc/opt/BESClient
-    # Download package from URL
-    wget https://example.com/path/to/$PACKAGE_NAME
+    cp actionsite.afxm /etc/opt/BESClient
 
     # Install package
     sudo dpkg -i $PACKAGE_NAME
